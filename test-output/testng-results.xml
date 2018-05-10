@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84032" started-at="2018-05-09T14:36:08Z" finished-at="2018-05-09T14:37:32Z">
+  <suite name="Default suite" duration-ms="24407" started-at="2018-05-10T12:55:24Z" finished-at="2018-05-10T12:55:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84032" started-at="2018-05-09T14:36:08Z" finished-at="2018-05-09T14:37:32Z">
-      <class name="com.freeCrm.Test.HomeTest">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="launch" is-config="true" duration-ms="20780" started-at="2018-05-09T20:06:08Z" finished-at="2018-05-09T20:06:29Z">
+    <test name="Default test" duration-ms="24407" started-at="2018-05-10T12:55:24Z" finished-at="2018-05-10T12:55:48Z">
+      <class name="com.freeCrm.Test.NewComPaTest">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.freeCrm.Test.NewComPaTest@28feb3fa]" name="launch" is-config="true" duration-ms="23181" started-at="2018-05-10T18:25:24Z" finished-at="2018-05-10T18:25:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="comparingTitle()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="comparingTitle" duration-ms="15" started-at="2018-05-09T20:06:29Z" finished-at="2018-05-09T20:06:29Z">
+        <test-method status="PASS" signature="enteringInfo()[pri:0, instance:com.freeCrm.Test.NewComPaTest@28feb3fa]" name="enteringInfo" duration-ms="1206" started-at="2018-05-10T18:25:47Z" finished-at="2018-05-10T18:25:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- comparingTitle -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="close" is-config="true" duration-ms="2028" started-at="2018-05-09T20:06:29Z" finished-at="2018-05-09T20:06:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="launch" is-config="true" duration-ms="18460" started-at="2018-05-09T20:06:31Z" finished-at="2018-05-09T20:06:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="clickLogOutTest()[pri:1, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="clickLogOutTest" duration-ms="166" started-at="2018-05-09T20:06:49Z" finished-at="2018-05-09T20:06:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickLogOutTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="close" is-config="true" duration-ms="2308" started-at="2018-05-09T20:06:50Z" finished-at="2018-05-09T20:06:52Z">
+        </test-method> <!-- enteringInfo -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.freeCrm.Test.NewComPaTest@28feb3fa]" name="close" is-config="true" duration-ms="0" started-at="2018-05-10T18:25:48Z" finished-at="2018-05-10T18:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="launch" is-config="true" duration-ms="19210" started-at="2018-05-09T20:06:52Z" finished-at="2018-05-09T20:07:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="clickOnCompaniesTest()[pri:2, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="clickOnCompaniesTest" duration-ms="149" started-at="2018-05-09T20:07:11Z" finished-at="2018-05-09T20:07:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnCompaniesTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="close" is-config="true" duration-ms="117" started-at="2018-05-09T20:07:11Z" finished-at="2018-05-09T20:07:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="launch" is-config="true" duration-ms="20426" started-at="2018-05-09T20:07:11Z" finished-at="2018-05-09T20:07:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="clickOnNewEvent()[pri:3, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="clickOnNewEvent" duration-ms="129" started-at="2018-05-09T20:07:32Z" finished-at="2018-05-09T20:07:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnNewEvent -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.freeCrm.Test.HomeTest@28feb3fa]" name="close" is-config="true" duration-ms="219" started-at="2018-05-09T20:07:32Z" finished-at="2018-05-09T20:07:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.freeCrm.Test.HomeTest -->
+      </class> <!-- com.freeCrm.Test.NewComPaTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

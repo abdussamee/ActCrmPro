@@ -40,9 +40,10 @@ public class LoginPageTest extends BaseClass
 	}
 	
 	@AfterMethod
-	public void close()
+	public void close() throws InterruptedException
 	{
-		//driver.close();
+		Thread.sleep(3000);
+		driver.close();
 	}
 
 }

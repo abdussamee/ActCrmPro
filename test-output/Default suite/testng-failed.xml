@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.freeCrm.Test.HomeTest">
+      <class name="com.freeCrm.Test.NewComPaTest">
         <methods>
-          <include name="clickOnNewEvent"/>
           <include name="close"/>
+          <include name="enteringInfo"/>
           <include name="launch"/>
         </methods>
-      </class> <!-- com.freeCrm.Test.HomeTest -->
+      </class> <!-- com.freeCrm.Test.NewComPaTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

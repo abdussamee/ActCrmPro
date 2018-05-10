@@ -2,24 +2,28 @@ package com.freeCrm.Test;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.freeCrm.Pages.CompaniesPage;
+import com.freeCrm.Pages.CreateCompanyPage;
 import com.freeCrm.Pages.HomePage;
 import com.freeCrm.Pages.LoginPage;
 import com.freeCrm.baseClass.BaseClass;
 
 import utils.UtilsClass;
 
-public class HomeTest extends BaseClass
+public class NewComPaTest extends BaseClass
 {
 	LoginPage login;
 	HomePage hp;
+	CompaniesPage compa;
 	UtilsClass utc;
+	CompaniesPage cp;
+	CreateCompanyPage cc;
 
-	public HomeTest() throws IOException 
+	public NewComPaTest() throws IOException
 	{
 		super();
 		
@@ -31,43 +35,26 @@ public class HomeTest extends BaseClass
 		InitializationAppender();
 		login=new LoginPage();
 		hp=new HomePage();
+		compa=new CompaniesPage();
 		utc=new UtilsClass();
 		login.loginPageMethod(prop.getProperty("username"),prop.getProperty("password"));
-		
-	}
-	
-	@Test(priority=0)
-	public void comparingTitle()
-	{
-		Assert.assertEquals(hp.getHomePageTitle(), "CRMPRO","The title is different");
-	}
-	
-	@Test(priority=1)
-	public void clickLogOutTest()
-	{
-		utc.switchToFrame();
-		hp.LogOutMeth();
-	}
-	
-	@Test(priority=2)
-	public void clickOnCompaniesTest() throws IOException
-	{
 		utc.switchToFrame();
 		hp.clickCompanies();
+		cp=new CompaniesPage();
+		cp.clickNewCompanyLink();
+		cc=new CreateCompanyPage();
 	}
 	
-	@Test(priority=3)
-	public void clickOnNewEvent() throws IOException
+	@Test
+	public void enteringInfo()
 	{
-		utc.switchToFrame();
-		hp.ClickOnNewEvent();
+		cc.creatingCompany();
 	}
 	
 	@AfterMethod
-	public void close() throws InterruptedException
+	public void close()
 	{
-		Thread.sleep(3000);
-		driver.close();
+		//driver.close();
 	}
 
 }
